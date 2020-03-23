@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章</title>
+</head>
+<body> 
+<center>
+<h3>文章</h3>
+        <form action="text_do.php" method="post">
+            <table border="2">
+                <tr>
+                    <td>标题</td>
+                    <td><input type="text" name="t_name"></td>
+                </tr>
+                <tr>
+                    <td>发表人</td>
+                    <td><input type="text" name="t_names"></td>    
+                </tr>
+                <tr>
+                    <td>内容</td>
+                    <td>
+                        <textarea name="t_contens"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>→</td>
+                    <td><input type="submit" value="ADD"></td>
+                </tr>
+            </table>
+        </form>
+</center>
+</body>
+</html>

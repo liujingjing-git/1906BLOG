@@ -12,7 +12,12 @@ if(empty($login_pwd))
     echo "<script>alert('密码不得为空'),location='login.php';</script>";
 }
 
-$sql = "select * from login";
-var_dump($sql);
+$sql = "select * from login where login_name";
+if($sql)
+{
+    echo "<script>alert('登陆成功'),location='index.php';</script>";
+}else{
+    echo "<script>alert('登录失败'),location='login.php';</script>";
+}
 
 ?>
