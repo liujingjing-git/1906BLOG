@@ -25,7 +25,10 @@
                 </tr>
             <?php foreach($data as $k=>$v){ ?>
                 <tr>
+                    <td><?php echo $v['t_id']?></td>
                     <td><?php echo $v['t_name']?></td>
+                    <td><?php echo $v['t_names']?></td>
+                    <td><?php echo $v['t_contens']?></td>
                 </tr>
             <?php }?>
             </table>
